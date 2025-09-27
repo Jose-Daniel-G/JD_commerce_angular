@@ -3,22 +3,19 @@ import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 import { NgIf } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TopHeaderComponent } from './partials/top-header/top-header.component';
+import { MobileBottomComponent } from './partials/mobile-bottom/mobile-bottom.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule, NgIf, TranslateModule],
+  imports: [RouterModule, NgIf, TranslateModule, TopHeaderComponent, MobileBottomComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
   user: any = null;
-  constructor(public authService: AuthService, private router: Router, private translate: TranslateService) {
-    this.translate.addLangs(['en', 'es']);
-    this.translate.setDefaultLang('es'); // Idioma por defecto
-    const savedLang = localStorage.getItem('lang') || 'es';
-    translate.use(savedLang);
-  }
+  constructor(public authService: AuthService, private router: Router) { }
   ngOnInit(): void {
     this.user = this.authService.getCurrentUser();
   }
@@ -29,11 +26,6 @@ export class HeaderComponent {
 
   }
 
-cambiarIdioma(event: Event) {
-  const selectElement = event.target as HTMLSelectElement;
-  const lang = selectElement.value;
-  this.translate.use(lang);
-  localStorage.setItem('lang', lang);
-}
+
 
 }
