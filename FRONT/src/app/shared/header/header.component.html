@@ -1,92 +1,119 @@
-    <!-- top header -->
-    <header class="home-2 d-none d-lg-block">
-        <div class="container">
-            <div class="d-flex align-items-center">
-                <div class="logo">
-                    <a href="index-1.html">
-                        <img loading="lazy"  src="assets/images/svg/logo.svg" alt="logo">
-                    </a>
-                </div>
+<!-- top header -->
+<header class="home-2 d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="logo">
+        <a routerLink="landing">
+          <img loading="lazy" src="assets/images/svg/logo.svg" alt="logo">
+        </a>
+      </div>
 
-                <ul class="nav_bar flex-grow-1">
-                    <li class="withsubs">
-                        <a routerLink="landing">Home <span><i class="las la-angle-down"></i></span></a>
-                        <ul class="subnav">
-                            <li><a routerLink="landing">Home page 1 </a></li>
-                            <!-- <li><a href="index-2.html">Home page 2</a></li>
-                            <li><a href="index-3.html">Home page 3</a></li> -->
-                        </ul>
-                    </li>
-                    <li class="withsubs">
-                        <a href="shop-list.html">Shop <span><i class="las la-angle-down"></i></span></a>
-                        <ul class="subnav">
-                            <li><a href="shop-list.html">List view </a></li>
-                            <li><a href="shop-grid.html">Grid view</a></li>
-                            <li><a href="shop-grid-2.html">Grid view 2</a></li>
-                            
-                            <li><a href="shopping-cart.html">Shopping cart</a></li>
-                            <li><a href="product-view.html">Product view</a></li>
-                        </ul>
-                    </li>
-                    <li class="withsubs">
-                        <a href="shop-list.html">Pages <span><i class="las la-angle-down"></i></span></a>
-                        <div class="subnav py-3 px-2 d-flex gx-4">
-                            <div class="single_subnav">
-                                <h5 class="text_lg ps-3 mb-2">Others pages</h5>
-                                <ul>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact-us.html">Contact us</a></li>
+      <ul class="nav_bar flex-grow-1">
+        <li class="withsubs">
+          <a routerLink="landing">{{ 'menu.home' | translate }}
+            <span><i class="las la-angle-down"></i></span>
+          </a>
+          <ul class="subnav">
+            <li><a routerLink="landing">{{ 'menu.home1' | translate }}</a></li>
+          </ul>
+        </li>
+        <li class="withsubs">
+          <a href="shop-list.html">{{ 'menu.shop' | translate }}
+            <span><i class="las la-angle-down"></i></span>
+          </a>
+          <ul class="subnav">
+            <li><a href="shop-list.html">{{ 'menu.listView' | translate }}</a></li>
+            <li><a href="shop-grid.html">{{ 'menu.gridView' | translate }}</a></li>
+            <li><a href="shop-grid-2.html">{{ 'menu.gridView2' | translate }}</a></li>
+            <li><a href="shopping-cart.html">{{ 'menu.cart' | translate }}</a></li>
+            <li><a href="product-view.html">{{ 'menu.productView' | translate }}</a></li>
+          </ul>
+        </li>
+        <li class="withsubs">
+          <a href="#">{{ 'menu.pages' | translate }}
+            <span><i class="las la-angle-down"></i></span>
+          </a>
+          <div class="subnav py-3 px-2 d-flex gx-4">
+            <div class="single_subnav">
+              <h5 class="text_lg ps-3 mb-2">{{ 'menu.otherPages' | translate }}</h5>
+              <ul>
+                <li><a href="about-us.html">{{ 'menu.about' | translate }}</a></li>
+                <li><a href="contact-us.html">{{ 'menu.contact' | translate }}</a></li>
+                <li><a href="track-order.html">{{ 'menu.trackOrder' | translate }}</a></li>
+                <li><a href="faq.html">{{ 'menu.faq' | translate }}</a></li>
+                <li><a href="404.html">{{ 'menu.notFound' | translate }}</a></li>
+              </ul>
+            </div>
+            <div class="single_subnav">
+              <h5 class="text_lg ps-3 mb-2">{{ 'menu.accountPages' | translate }}</h5>
+              <ul>
+                <li><a routerLink="/dashboard">{{ 'menu.myAccount' | translate }}</a></li>
+                <li><a routerLink="/auth/login">{{ 'menu.login' | translate }}</a></li>
+                <li><a routerLink="/auth/register">{{ 'menu.register' | translate }}</a></li>
+                <li><a href="forgot-password.html">{{ 'menu.forgotPassword' | translate }}</a></li>
+              </ul>
+            </div>
+            <div class="single_subnav">
+              <h5 class="text_lg ps-3 mb-2">{{ 'menu.checkoutPages' | translate }}</h5>
+              <ul>
+                <li><a href="checkout.html">{{ 'menu.checkout' | translate }}</a></li>
+                <li><a href="payment.html">{{ 'menu.payment' | translate }}</a></li>
+                <li><a href="wish-list.html">{{ 'menu.wishlist' | translate }}</a></li>
+                <li><a href="order-completed.html">{{ 'menu.orderComplete' | translate }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact-us.html">{{ 'menu.contact' | translate }}</a></li>
 
-                                    <li><a href="track-order.html">Track order</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_subnav">
-                                <h5 class="text_lg ps-3 mb-2">Account pages</h5>
-                                <ul>
-                                    <li><a hrouterLink="/dashboard">My Account</a></li>
-                                    <li><a hrouterLink="auth/login">Login</a></li>
-                                    <li><a routerLink="auth/register">Register</a></li>
-                                    <li><a href="forgot-password.html">Forgot password</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_subnav">
-                                <h5 class="text_lg ps-3 mb-2">Checkout page</h5>
-                                <ul>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="payment.html">Payment</a></li>
-                                    <li><a href="wish-list.html">Wishlist</a></li>
-                                    <li><a href="order-completed.html">Order complete</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="contact-us.html">contact</a></li>
-                    <li class="tophead_items ms-auto">
-                        <div class="me-3">
-                            <a class="text-semibold me-0" href="login.html">login</a><span class="text_xs">/</span><a
-                                class="text-semibold" href="register.html">Register</a>
-                        </div>
-                        <div>
-                    <select (change)="cambiarIdioma($event)">
+        <li class="tophead_items ms-auto">
+          <div class="me-3">
+            <a class="text-semibold me-0" routerLink="/auth/login">{{ 'menu.login' | translate }}</a>
+            <span class="text_xs">/</span>
+            <a class="text-semibold" routerLink="/auth/register">{{ 'menu.register' | translate }}</a>
+          </div>
+          <div>
+                    <select class="form-select" (change)="cambiarIdioma($event)">
                     <option value="es">Español</option>
                     <option value="en">English</option>
                     </select>
-                        </div>
-                        <div class="ms-3">
-                            <select class="nice_select">
-                                <option>Currency</option>
-                                <option>Dollar</option>
-                                <option>Euro</option>
-                            </select>
-                        </div>
-                    </li>
-                </ul>
+          </div>
+          <div class="ms-3">
+            <select class="nice_select">
+              <option>{{ 'menu.currency' | translate }}</option>
+              <option>Dollar</option>
+              <option>Euro</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-            </div>
-        </div>
-    </header>
+<!-- mobile bottom bar -->
+<div class="mobile_bottombar d-block d-lg-none">
+  <div class="header_icon">
+    <a href="javascript:void(0)" class="icon_wrp text-center open_menu">
+      <span class="icon"><i class="las la-bars"></i></span>
+      <span class="icon_text">{{ 'menu.menu' | translate }}</span>
+    </a>
+    <a href="javascript:void(0)" class="icon_wrp text-center open_category">
+      <span class="icon"><i class="icon-list-ul"></i></span>
+      <span class="icon_text">{{ 'menu.categories' | translate }}</span>
+    </a>
+    <a href="javascript:void(0)" class="icon_wrp text-center" id="src_icon">
+      <span class="icon"><i class="icon-search-left"></i></span>
+      <span class="icon_text">{{ 'menu.search' | translate }}</span>
+    </a>
+    <a href="javascript:void(0)" class="icon_wrp crt text-center" id="openCart">
+      <span class="icon"><i class="icon-cart"></i></span>
+      <span class="icon_text">{{ 'menu.cart' | translate }}</span>
+      <span class="pops">8</span>
+    </a>
+  </div>
+</div>
+
 
     <!-- navbar -->
     <nav class="home-2">
@@ -571,69 +598,69 @@
         </div>
     </div>
 
-    <!-- mobile menu -->
-    <div class="mobile_menwrap d-lg-none" id="mobile_menwrap">
-        <div class="mobile_menu_2">
-            <h5 class="mobile_title">
-                Menu
-                <span class="sidebarclose" id="menuclose">
-                    <i class="las la-times"></i>
-                </span>
-            </h5>
-            <ul>
-                <li class="withsub">
-                    <a href="javascript:void(0)">
-                        Home
-                    </a>
-                    <div class="submn">
-                        <a routerLink="landing">Home 1</a>
-                        <!-- <a href="index-2.html">Home 2</a>
-                        <a href="index-3.html">Home 3</a> -->
-                    </div>
-                </li>
-
-                <li class="withsub">
-                    <a href="javascript:void(0)">
-                        Shop
-                    </a>
-                    <div class="submn">
-                        <a href="shop-list.html">List View</a>
-                        <a href="shop-grid.html">Grid View</a>
-                        <a href="shop-grid-2.html">Grid View 2</a>
-                        <a href="wish-list.html">Wishlist</a>
-                        <a href="shopping-cart.html">Shopping cart</a>
-                        <a href="product-view.html">Product view</a>
-                    </div>
-                </li>
-                <li class="withsub">
-                    <a href="javascript:void(0)">
-                        My Account
-                    </a>
-                    <div class="submn">
-                        <a routerLink="/dashboard">My account</a>
-                        <a routerLink="/auth/login" >Login</a>
-                        <a routerLink="/auth/register" >Register</a>
-                        <!-- <a href="forgot-password.html">Forgot password</a> -->
-                    </div>
-                </li>
-                <li class="withsub">
-                    <a href="javascript:void(0)">
-                        Other pages
-                    </a>
-                    <div class="submn">
-                        <a href="about-us.html">about us</a>
-                        <a href="contact-us.html">Contact us</a>
-                        <a href="track-order.html">Track order</a>
-                        <a href="faq.html">FAQ</a>
-                        <a href="404.html">404</a>
-                        <a href="checkout.html">Checkout</a>
-                        <a href="payment.html">Payment</a>
-                        <a href="order-completed.html">Order complete</a>
-                    </div>
-                </li>
-            </ul>
+<!-- mobile menu -->
+<div class="mobile_menwrap d-lg-none" id="mobile_menwrap">
+  <div class="mobile_menu_2">
+    <h5 class="mobile_title">
+      {{ 'menu.title' | translate }}
+      <span class="sidebarclose" id="menuclose">
+        <i class="las la-times"></i>
+      </span>
+    </h5>
+    <ul>
+      <li class="withsub">
+        <a href="javascript:void(0)">
+          {{ 'menu.home' | translate }}
+        </a>
+        <div class="submn">
+          <a routerLink="landing">{{ 'menu.home1' | translate }}</a>
         </div>
-    </div>
+      </li>
+
+      <li class="withsub">
+        <a href="javascript:void(0)">
+          {{ 'menu.shop' | translate }}
+        </a>
+        <div class="submn">
+          <a href="shop-list.html">{{ 'menu.listView' | translate }}</a>
+          <a href="shop-grid.html">{{ 'menu.gridView' | translate }}</a>
+          <a href="shop-grid-2.html">{{ 'menu.gridView2' | translate }}</a>
+          <a href="wish-list.html">{{ 'menu.wishlist' | translate }}</a>
+          <a href="shopping-cart.html">{{ 'menu.cart' | translate }}</a>
+          <a href="product-view.html">{{ 'menu.productView' | translate }}</a>
+        </div>
+      </li>
+
+      <li class="withsub">
+        <a href="javascript:void(0)">
+          {{ 'menu.account' | translate }}
+        </a>
+        <div class="submn">
+          <a routerLink="/dashboard">{{ 'menu.myAccount' | translate }}</a>
+          <a routerLink="/auth/login">{{ 'menu.login' | translate }}</a>
+          <a routerLink="/auth/register">{{ 'menu.register' | translate }}</a>
+        </div>
+      </li>
+
+      <li class="withsub">
+        <a href="javascript:void(0)">
+          {{ 'menu.other' | translate }}
+        </a>
+        <div class="submn">
+          <a href="about-us.html">{{ 'menu.about' | translate }}</a>
+          <a href="contact-us.html">{{ 'menu.contact' | translate }}</a>
+          <a href="track-order.html">{{ 'menu.trackOrder' | translate }}</a>
+          <a href="faq.html">{{ 'menu.faq' | translate }}</a>
+          <a href="404.html">{{ 'menu.notFound' | translate }}</a>
+          <a href="checkout.html">{{ 'menu.checkout' | translate }}</a>
+          <a href="payment.html">{{ 'menu.payment' | translate }}</a>
+          <a href="order-completed.html">{{ 'menu.orderComplete' | translate }}</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
     <!--  mobile cart -->
     <div class="mobile_menwrap d-lg-none" id="mobileCart">
