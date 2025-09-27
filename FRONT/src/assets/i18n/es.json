@@ -1,0 +1,269 @@
+ {
+
+     "locale": "es",
+
+     "heroTextPromo": "Obtén hasta 50% de descuento solo por hoy",
+
+     "buttonShopNow": "Comprar Ahora",
+
+     "featureFreeShippingTitle": "Envío Gratuito",
+
+     "featureFreeShippingDetail": "Pedidos superiores a $200",
+
+     "featureMoneyReturnsTitle": "Devolución de Dinero",
+
+     "featureMoneyReturnsDetail": "30 días para devolución de dinero",
+
+     "featureSupportTitle": "Soporte 24/7",
+
+     "featureSupportDetail": "Atención al cliente",
+
+     "topRankingTitle": "Mejor Ranking",
+
+     "rankingWatchCategory": "Relojes",
+
+     "rankingMobileCategory": "Móviles",
+
+     "rankingLaptopCategory": "Portátiles",
+
+     "rankingHeadphonesCategory": "Auriculares",
+
+     "ratingCount": "(150)",
+
+     "newArrivalsTitle": "Nuevos Productos",
+
+     "buttonSeeMore": "Ver Más <span><i class=\"las la-angle-right\"></i></span>",
+
+     "productTagHot": "Caliente",
+
+     "quickViewTitle": "Vista Rápida",
+
+     "addToWishlistTitle": "Añadir a Lista de Deseos",
+
+     "buttonAddToCart": "Añadir al carrito",
+
+     "downloadAppTitle": "¡Descarga la app de RAFCART ahora!",
+
+     "downloadAppText": "Compra más rápido y fácil con nuestra aplicación. Obtén un enlace para descargar la app en tu teléfono",
+
+     "downloadAppPlaceholder": "Correo electrónico",
+
+     "downloadAppButton": "Suscribirse",
+
+     "recommendedTitle": "Recomendado para ti",
+
+     "footerText": "Lorem ipsum, o lipsum como a veces se le conoce, es un texto de relleno usado en maquetación de impresos, gráficos o diseños web.",
+
+     "newsletterTitle": "Boletín",
+
+     "newsletterPlaceholder": "Tu correo electrónico",
+
+     "newsletterButton": "Suscribirse",
+
+     "footerAccountTitle": "Mi cuenta",
+
+     "footerAccountOrders": "Pedidos",
+
+     "footerAccountWishlist": "Lista de deseos",
+
+     "footerAccountTrack": "Rastrear pedido",
+
+     "footerAccountManage": "Administrar cuenta",
+
+     "footerAccountReturn": "Devolver pedido",
+
+     "footerInfoTitle": "Información",
+
+     "footerInfoAbout": "Sobre nosotros",
+
+     "footerInfoReturnPolicy": "Política de devoluciones",
+
+     "footerInfoTerms": "Términos y condiciones",
+
+     "footerInfoPrivacy": "Política de privacidad",
+
+     "footerInfoFaq": "Preguntas frecuentes",
+
+     "footerContactTitle": "Contacto",
+
+     "footerCopyright": "© RAFCART - Todos los derechos reservados",
+
+     "productReviews": "Reseñas",
+
+     "productAvailability": "Disponibilidad",
+
+     "productInStock": "En stock",
+
+     "productBrand": "Marca",
+
+     "productCategory": "Categoría",
+
+     "productSku": "SKU",
+
+     "productSize": "Talla",
+
+     "productColor": "Color",
+
+     "productQuantity": "Cantidad",
+
+     "productAddToCart": "Agregar al carrito",
+
+     "productWishlist": "Lista de deseos",
+
+     "menu": {
+
+         "title": "Menú",
+
+         "home": "Inicio",
+
+         "home1": "Inicio 1",
+
+         "shop": "Tienda",
+
+         "listView": "Vista en lista",
+
+         "gridView": "Vista en cuadrícula",
+
+         "gridView2": "Vista en cuadrícula 2",
+
+         "wishlist": "Lista de deseos",
+
+         "cart": "Carrito",
+
+         "productView": "Vista de producto",
+
+         "account": "Mi cuenta",
+
+         "myAccount": "Mi perfil",
+
+         "login": "Ingresar",
+
+         "register": "Registrarse",
+
+         "other": "Otras páginas",
+
+         "about": "Sobre nosotros",
+
+         "contact": "Contáctanos",
+
+         "trackOrder": "Rastrear pedido",
+
+         "faq": "Preguntas frecuentes",
+
+         "notFound": "Página no encontrada",
+
+         "checkout": "Pagar",
+
+         "payment": "Pago",
+
+         "orderComplete": "Pedido completado",
+
+         "pages": "Páginas",
+
+         "otherPages": "Otras páginas",
+
+         "accountPages": "Páginas de cuenta",
+
+         "forgotPassword": "Olvidé mi contraseña",
+
+         "checkoutPages": "Páginas de pago",
+
+         "language": "Idioma",
+
+         "currency": "Moneda",
+
+         "menu": "Menú",
+
+         "categories": "Categorías",
+
+         "search": "Buscar"
+
+     },"categories": {
+
+     "all": "Todas las categorías",
+
+     "shoes": "Zapatos",
+
+     "men": "Hombres",
+
+     "women": "Mujeres",
+
+     "electronics": "Electrónica",
+
+     "headphones": "Auriculares",
+
+     "watches": "Relojes",
+
+     "computer": "Computadores",
+
+     "mobile": "Celulares",
+
+     "hotSale": "Ofertas",
+
+     "hoodies": "Buzos y sudaderas",
+
+     "tshirt": "Camisetas",
+
+     "mensSets": "Conjuntos de hombre",
+
+     "jacket": "Chaquetas",
+
+     "bottoms": "Pantalones",
+
+     "casualPants": "Pantalones casuales",
+
+     "sleepLounge": "Ropa de dormir y descanso",
+
+     "jeans": "Jeans",
+
+     "shorts": "Pantalonetas",
+
+     "towel": "Toalla",
+
+     "accessories": "Accesorios"
+
+},
+
+"search": {
+
+     "allCategories": "Todas las categorías",
+
+     "placeholder": "Buscar producto...",
+
+     "search": "Buscar"
+
+ },
+
+ "cart": {
+
+     "items": "artículos",
+
+     "subtotal": "Subtotal",
+
+     "viewCart": "Ver carrito",
+
+     "checkout": "Pagar"
+
+},
+
+"account": {
+
+     "welcome": "Bienvenido",
+
+     "toShop": "a la tienda RAFCART",
+
+     "join": "Registrarse",
+
+     "myAccount": "Mi cuenta",
+
+     "myOrder": "Mis pedidos",
+
+     "myWishlist": "Mi lista de deseos",
+
+     "myCart": "Mi carrito",
+
+     "logout": "Cerrar sesión"
+
+ }
+
+}
