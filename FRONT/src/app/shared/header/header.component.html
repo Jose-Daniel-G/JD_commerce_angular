@@ -69,11 +69,10 @@
                                 class="text-semibold" href="register.html">Register</a>
                         </div>
                         <div>
-                            <select class="nice_select">
-                                <option>Language</option>
-                                <option>English</option>
-                                <option>Franch</option>
-                            </select>
+                    <select (change)="cambiarIdioma($event)">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    </select>
                         </div>
                         <div class="ms-3">
                             <select class="nice_select">

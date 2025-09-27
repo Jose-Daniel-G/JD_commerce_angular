@@ -103,5 +103,6 @@ npm install --save-dev @types/jquery
 ng version
 npx tsc -v
 npm install @ngx-translate/core@latest @ngx-translate/http-loader@latest
+ng add @angular/localize
 
 ```

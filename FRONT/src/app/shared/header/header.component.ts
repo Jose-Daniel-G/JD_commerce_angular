@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 import { NgIf } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,12 @@ import { NgIf } from '@angular/common';
 })
 export class HeaderComponent {
   user: any = null;
-  constructor(public authService: AuthService, private router: Router) { }
+  constructor(public authService: AuthService, private router: Router, private translate: TranslateService) {
+    this.translate.addLangs(['en', 'es']);
+    this.translate.setDefaultLang('es'); // Idioma por defecto
+    const savedLang = localStorage.getItem('lang') || 'es';
+    translate.use(savedLang);
+  }
   ngOnInit(): void {
     this.user = this.authService.getCurrentUser();
   }
@@ -22,4 +28,12 @@ export class HeaderComponent {
     this.router.navigate(['/login']);
 
   }
+
+cambiarIdioma(event: Event) {
+  const selectElement = event.target as HTMLSelectElement;
+  const lang = selectElement.value;
+  this.translate.use(lang);
+  localStorage.setItem('lang', lang);
+}
+
 }

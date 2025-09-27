@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { SharedComponent } from '../../shared/shared.component';
 import { HeaderComponent } from '../../shared/header/header.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 declare var $: any;
 declare function initPageEcommerce([]): any;
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SharedComponent, HeaderComponent, FooterComponent],
+  imports: [SharedComponent, HeaderComponent, FooterComponent,TranslateModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

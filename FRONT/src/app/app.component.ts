@@ -13,13 +13,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'multimedia';
-  constructor(private translate: TranslateService) {
-    // Idioma por defecto
-    this.translate.setDefaultLang('es');
 
-    // Detectar el idioma del navegador (opcional)
-    const browserLang = this.translate.getBrowserLang();
-    this.translate.use(browserLang?.match(/en|es/) ? browserLang : 'es');
-  }
 
 }
