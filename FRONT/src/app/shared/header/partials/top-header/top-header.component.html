@@ -1,0 +1,91 @@
+<header class="home-2 d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="logo">
+        <a routerLink="landing">
+          <img loading="lazy" src="assets/images/svg/logo.svg" alt="logo">
+        </a>
+      </div>
+
+      <ul class="nav_bar flex-grow-1">
+        <li class="withsubs">
+          <a routerLink="landing">{{ 'menu.home' | translate }}
+            <span><i class="las la-angle-down"></i></span>
+          </a>
+          <ul class="subnav">
+            <li><a routerLink="landing">{{ 'menu.home1' | translate }}</a></li>
+          </ul>
+        </li>
+        <li class="withsubs">
+          <a href="shop-list.html">{{ 'menu.shop' | translate }}
+            <span><i class="las la-angle-down"></i></span>
+          </a>
+          <ul class="subnav">
+            <li><a href="shop-list.html">{{ 'menu.listView' | translate }}</a></li>
+            <li><a href="shop-grid.html">{{ 'menu.gridView' | translate }}</a></li>
+            <li><a href="shop-grid-2.html">{{ 'menu.gridView2' | translate }}</a></li>
+            <li><a href="shopping-cart.html">{{ 'menu.cart' | translate }}</a></li>
+            <li><a href="product-view.html">{{ 'menu.productView' | translate }}</a></li>
+          </ul>
+        </li>
+        <li class="withsubs">
+          <a href="#">{{ 'menu.pages' | translate }}
+            <span><i class="las la-angle-down"></i></span>
+          </a>
+          <div class="subnav py-3 px-2 d-flex gx-4">
+            <div class="single_subnav">
+              <h5 class="text_lg ps-3 mb-2">{{ 'menu.otherPages' | translate }}</h5>
+              <ul>
+                <li><a href="about-us.html">{{ 'menu.about' | translate }}</a></li>
+                <li><a href="contact-us.html">{{ 'menu.contact' | translate }}</a></li>
+                <li><a href="track-order.html">{{ 'menu.trackOrder' | translate }}</a></li>
+                <li><a href="faq.html">{{ 'menu.faq' | translate }}</a></li>
+                <li><a href="404.html">{{ 'menu.notFound' | translate }}</a></li>
+              </ul>
+            </div>
+            <div class="single_subnav">
+              <h5 class="text_lg ps-3 mb-2">{{ 'menu.accountPages' | translate }}</h5>
+              <ul>
+                <li><a routerLink="/dashboard">{{ 'menu.myAccount' | translate }}</a></li>
+                <li><a routerLink="/auth/login">{{ 'menu.login' | translate }}</a></li>
+                <li><a routerLink="/auth/register">{{ 'menu.register' | translate }}</a></li>
+                <li><a href="forgot-password.html">{{ 'menu.forgotPassword' | translate }}</a></li>
+              </ul>
+            </div>
+            <div class="single_subnav">
+              <h5 class="text_lg ps-3 mb-2">{{ 'menu.checkoutPages' | translate }}</h5>
+              <ul>
+                <li><a href="checkout.html">{{ 'menu.checkout' | translate }}</a></li>
+                <li><a href="payment.html">{{ 'menu.payment' | translate }}</a></li>
+                <li><a href="wish-list.html">{{ 'menu.wishlist' | translate }}</a></li>
+                <li><a href="order-completed.html">{{ 'menu.orderComplete' | translate }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact-us.html">{{ 'menu.contact' | translate }}</a></li>
+
+        <li class="tophead_items ms-auto">
+          <div class="me-3">
+            <a class="text-semibold me-0" routerLink="/auth/login">{{ 'menu.login' | translate }}</a>
+            <span class="text_xs">/</span>
+            <a class="text-semibold" routerLink="/auth/register">{{ 'menu.register' | translate }}</a>
+          </div>
+          <div>
+                    <select class="form-select" (change)="cambiarIdioma($event)">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    </select>
+          </div>
+          <div class="ms-3">
+            <select class="nice_select">
+              <option>{{ 'menu.currency' | translate }}</option>
+              <option>Dollar</option>
+              <option>Euro</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
